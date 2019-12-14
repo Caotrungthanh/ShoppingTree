@@ -1,0 +1,18 @@
+<?php require_once __DIR__. "/layouts/header.php";  ?>
+    <h1 class="p-4">Giới thiệu về trang web</h1>
+    <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis facere distinctio? Ad, dicta itaque, vel quas adipisci praesentium, culpa deleniti nulla dolor earum maxime. Pariatur minus ad praesentium illum?
+    Necessitatibus delectus eos natus! Ullam blanditiis quis esse ducimus reprehenderit, explicabo natus veritatis soluta cum veniam minima perspiciatis tempora deleniti atque corporis magni distinctio doloremque omnis numquam quasi facere nulla!
+    Delectus ratione exercitationem repudiandae adipisci blanditiis cumque rem sunt nam suscipit repellat! Adipisci id veniam sint officiis rem perferendis totam, accusamus beatae aliquam, dignissimos, corrupti in? Voluptatem deserunt sint adipisci!
+    Modi atque cum accusamus sit. Rem sequi eius expedita officia earum fuga illo exercitationem, modi doloremque. Possimus perferendis molestiae culpa, hic ipsam sint error ex, architecto explicabo magni libero ipsa.
+    Ducimus unde alias, doloribus possimus dolore mollitia rerum id reprehenderit deleniti, nemo recusandae ex facere cupiditate. Vitae sint, illum eum numquam labore natus inventore suscipit velit placeat. Culpa, ab? Ipsam?
+    Facilis praesentium nam similique quod totam aliquid corrupti, culpa laudantium quibusdam magnam sunt debitis ipsam inventore? Reprehenderit deserunt laboriosam, sunt consequuntur blanditiis explicabo cum iusto? Minus maiores recusandae cum labore.
+    Neque quos necessitatibus voluptate ullam qui incidunt praesentium ad, sequi aliquam possimus suscipit labore quas beatae quod asperiores in. Suscipit fugit aperiam autem libero quam eveniet placeat tempore fugiat quaerat?
+    Ipsam nesciunt rerum, tempore cumque fuga pariatur natus voluptas repellat inventore deleniti esse! Illum obcaecati dignissimos incidunt mollitia deserunt! Animi dolor sunt nam totam porro blanditiis eum inventore, sapiente cumque.
+    Velit sint inventore voluptatem vero, ea cupiditate quod iusto ab, alias magni porro quos nisi ducimus atque. Deserunt, placeat. Enim aspernatur totam sit quibusdam nulla id officiis, consectetur atque ut?
+    In provident fuga repellat magni temporibus hic quis, at nulla magnam molestias nesciunt voluptatem fugiat id eveniet maxime autem praesentium eius, iure dignissimos dolorem reiciendis. Odit cupiditate enim sapiente impedit.
+    Officiis rerum illum a eum totam, tenetur omnis repellat eos dolore laudantium vitae neque repellendus molestias nesciunt provident excepturi architecto, sed maxime magni magnam. Illum ab vero eum fuga officia?
+    Minima quis facilis quisquam architecto rem recusandae iste praesentium quod similique nulla corrupti repellat cumque natus cum ratione, eligendi distinctio atque quia dolorem consectetur quam error tempora excepturi soluta. Quia.
+    Maxime, saepe! Rem temporibus explicabo accusamus vero. Animi quas, aspernatur deleniti aliquid iure deserunt adipisci id necessitatibus totam, corrupti debitis dolorum minima, quidem vitae rerum ab laudantium perferendis distinctio autem.
+    Dolorum voluptatum at sequi dolorem possimus rem veritatis, consectetur harum recusandae tenetur, quidem accusantium et laborum corporis temporibus quis perspiciatis, minima provident facere iure? Aliquam laboriosam et quaerat ipsam corrupti.
+    Pariatur a voluptatem, provident incidunt, nostrum quod qui, veritatis modi expedita maxime deleniti repellat consequuntur perferendis! Ut tempore illum nesciunt voluptates eos, impedit perferendis autem voluptate, beatae vero iusto a.</p>
+<?php require_once __DIR__. "/layouts/footer.php";  ?>
