@@ -4,9 +4,14 @@ Chào mừng đến với website giới thiệu cây cảnh.
 ### Công dụng
 * Thông tin của từng loại cây.
 * Tìm kiếm từng loại cây.
+* Cách chăm sóc.
+* Điều kiện nuôi trồng.
+* Khả năng thích ứng với môi trường.
 ### Ứng dụng
 * Giúp mọi người có thể hiểu biết về cây.
 * Phong thủy của từng loại cây.
+* Kết nối những người yêu cây với loại cây mà mình mong muốn.
+* Giúp mọi người chăm sóc tốt nhất cho cây cảnh của mình
 # Cách cài đặt
 * Bước 1: Clone Responsity về.
 * Bước 2: Copy folder vừa clone về và cho vào thư mục của xampp.
