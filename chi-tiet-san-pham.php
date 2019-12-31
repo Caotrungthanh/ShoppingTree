@@ -7,6 +7,9 @@
     // fetchID($table, $id) lấy tất cả các dữ liệu mà id được chọn (Database.php)
     $sanpham = $db -> fetchID("sanpham", $id);
 
+    $Danhmuc_id = intval( $sanpham['danhmuc_id'] );
+    $sql = "SELECT * FROM sanpham WHERE danhmuc_id = $Danhmuc_id ORDER BY id DESC LIMIT 3";
+    $goi_y_cho_ban = $db -> fetchsql( $sql );
     
 ?>
 
@@ -25,23 +28,26 @@
                         <div class="row mt-4">
                             <div class="col-12 tab-list">
                                 <div class="tab">
-                                    <button class="tablinks" onclick="openCity(event, 'mota')">Mô tả</button>
-                                    <button class="tablinks" onclick="openCity(event, 'chieucao')">Chiều cao</button>
-                                    <button class="tablinks" onclick="openCity(event, 'phanbo')">Phân bố</button>
+                                    <button class="tablinks" onclick="openCity(event, 'gioithieu')">Giới thiệu</button>
+                                    <button class="tablinks" onclick="openCity(event, 'dacdiem')">Đặc điểm</button>
+                                    <button class="tablinks" onclick="openCity(event, 'phongthuy')">Phong thủy</button>
                                     <button class="tablinks" onclick="openCity(event, 'chamsoc')">Chăm sóc</button>
                                 </div>
                             </div>
                             <div class="col-12 tab-list_show">
-                                <div id="mota" class="tabcontent">
-                                    <p><?php echo $sanpham['mota'] ?></p>
+                                <div id="gioithieu" class="tabcontent">
+                                    <p>
+                                        <?php echo $sanpham['mota'] ?></p>
+                                    <p>Chiều cao: <?php echo $sanpham['chieucao'] ?></p>
+                                    <p>Phân bố: <?php echo $sanpham['phanbo'] ?></p>
                                 </div>
 
-                                <div id="chieucao" class="tabcontent">
-                                    <p><?php echo $sanpham['chieucao'] ?></p>
+                                <div id="dacdiem" class="tabcontent">
+                                    <p><?php echo $sanpham['dacdiem'] ?></p>
                                 </div>
 
-                                <div id="phanbo" class="tabcontent">
-                                    <p><?php echo $sanpham['phanbo'] ?></p>
+                                <div id="phongthuy" class="tabcontent">
+                                    <p><?php echo $sanpham['ynghiaphongthuy'] ?></p>
                                 </div>
 
                                 <div id="chamsoc" class="tabcontent">
@@ -51,6 +57,27 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="goi-y mt-4">
+                <h2>Gợi ý cho bạn</h2>
+                <div class="row">
+                    <?php foreach($goi_y_cho_ban as $item) : ?>
+                        <div class="col-md-12 col-lg-4 list-product text-center">
+                            <div class="card list-product_item" style="width: 18rem;">
+                                <a href="chi-tiet-san-pham.php?id=<?php echo $item['id'] ?>">
+                                    <img class="card-img-top" src="<?php echo duongdan() ?>/public/uploads/sanpham/<?php echo $item['anhsanpham'] ?>" width="100%" height="400px" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php echo $item['tensanpham'] ?></h5>
+                                    <p class="card-text"><?php echo $item['hothucvat'] ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div> 
             </div>
+
+
         </div>
     <?php require_once __DIR__. "/layouts/footer.php";  ?>
