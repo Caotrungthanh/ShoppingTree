@@ -33,7 +33,9 @@
             "mota"              => postInput('mota'),
             "hothucvat"         => postInput('hothucvat'),
             "chieucao"          => postInput('chieucao'),
-            "chamsoc"           => postInput('chamsoc')
+            "chamsoc"           => postInput('chamsoc'),
+            "dacdiem"           => postInput('dacdiem'),
+            "ynghiaphongthuy"   => postInput('ynghiaphongthuy')
         ];
 
         $error = [];
@@ -51,27 +53,35 @@
 
         if(postInput('phanbo') == '')
         {
-            $error['phanbo'] = "Bạn hãy nhập giá sản phẩm";
+            $error['phanbo'] = "Bạn hãy nhập phân bố.";
         }
 
         if(postInput('mota') == '')
         {
-            $error['mota'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['mota'] = "Bạn hãy nhập mô tả.";
         }
 
         if(postInput('hothucvat') == '')
         {
-            $error['hothucvat'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['hothucvat'] = "Bạn hãy nhập họ thực vật.";
         }
 
         if(postInput('chieucao') == '')
         {
-            $error['chieucao'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['chieucao'] = "Bạn hãy nhập chiều cao.";
         }
 
         if(postInput('chamsoc') == '')
         {
-            $error['chamsoc'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['chamsoc'] = "Bạn hãy nhập cách trồng.";
+        }
+        if(postInput('dacdiem') == '')
+        {
+            $error['dacdiem'] = "Bạn hãy nhập đặc điểm.";
+        }
+        if(postInput('ynghiaphongthuy') == '')
+        {
+            $error['ynghiaphongthuy'] = "Bạn hãy nhập ý nghĩa phong thủy.";
         }
 
         // Nếu error trống có nghĩa là không có lỗi
@@ -185,8 +195,8 @@
             </div>
             <div class="form-group">
                 <div class="col">
-                    <label for="exampleInputEmail1">Mô tả</label>
-                    <textarea name="mota" class="form-control" cols="20" rows="5"><?php echo $Editsanpham['mota'] ?></textarea>
+                    <label for="exampleInputEmail1">Giới thiệu</label>
+                    <textarea name="mota" class="form-control" id="editor1" cols="20" rows="5"><?php echo $Editsanpham['mota'] ?></textarea>
                     <?php if(isset($error['mota'])) : ?>
                         <p class="text-danger ml-3"> <?php echo $error['mota'] ?></p>
                     <?php endif ?>
@@ -195,9 +205,29 @@
             <div class="form-group">
                 <div class="col">
                     <label for="exampleInputEmail1">Chăm sóc</label>
-                    <textarea name="chamsoc" class="form-control" cols="20" rows="5"><?php echo $Editsanpham['chamsoc'] ?></textarea>
+                    <textarea name="chamsoc" class="form-control" id="editor2" cols="20" rows="5"><?php echo $Editsanpham['chamsoc'] ?></textarea>
                     <?php if(isset($error['chamsoc'])) : ?>
                         <p class="text-danger ml-3"> <?php echo $error['chamsoc'] ?></p>
+                    <?php endif ?>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col">
+                    <label for="exampleInputEmail1">Đặc điểm</label>
+                    <textarea name="dacdiem" class="form-control" id="editor3" cols="20" rows="5"></textarea>
+                    <?php if(isset($error['dacdiem'])) : ?>
+                        <p class="text-danger ml-3"> <?php echo $error['dacdiem'] ?></p>
+                    <?php endif ?>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col">
+                    <label for="exampleInputEmail1">Ý nghĩa phong thủy</label>
+                    <textarea name="ynghiaphongthuy" class="form-control" id="editor4" cols="20" rows="5"></textarea>
+                    <?php if(isset($error['ynghiaphongthuy'])) : ?>
+                        <p class="text-danger ml-3"> <?php echo $error['ynghiaphongthuy'] ?></p>
                     <?php endif ?>
                 </div>
             </div>
@@ -210,6 +240,13 @@
 <!-- /.content-wrapper -->
 
 <?php require_once __DIR__. "/../../layouts/footer.php";  ?>
+<script type="text/javascript" src="<?php echo duongdan() ?>public/admin/js/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+    CKEDITOR.replace( 'editor2' );
+    CKEDITOR.replace( 'editor3' );
+    CKEDITOR.replace( 'editor4' );
+</script>
 
 
  

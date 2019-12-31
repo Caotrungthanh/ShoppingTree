@@ -19,7 +19,9 @@
             "mota"              => postInput('mota'),
             "hothucvat"         => postInput('hothucvat'),
             "chieucao"          => postInput('chieucao'),
-            "chamsoc"           => postInput('chamsoc')
+            "chamsoc"           => postInput('chamsoc'),
+            "dacdiem"           => postInput('dacdiem'),
+            "ynghiaphongthuy"   => postInput('ynghiaphongthuy')
         ];
 
         $error = [];
@@ -43,27 +45,27 @@
 
         if( ! isset($_FILES['anhsanpham']) )
         {
-            $error['anhsanpham'] = "Bạn hãy chọn ảnh sản phẩm";
+            $error['anhsanpham'] = "Bạn hãy chọn ảnh";
         }
 
         if(postInput('mota') == '')
         {
-            $error['mota'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['mota'] = "Bạn hãy nhập mô tả";
         }
 
         if(postInput('hothucvat') == '')
         {
-            $error['hothucvat'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['hothucvat'] = "Bạn hãy nhập họ thực vật";
         }
 
         if(postInput('chieucao') == '')
         {
-            $error['chieucao'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['chieucao'] = "Bạn hãy nhập chiều cao";
         }
 
         if(postInput('chamsoc') == '')
         {
-            $error['chamsoc'] = "Bạn hãy nhập mô tả về sản phẩm";
+            $error['chamsoc'] = "Bạn hãy nhập thông tin cách trồng ";
         }
 
         // Nếu error trống có nghĩa là không có lỗi
@@ -198,8 +200,25 @@
                 </div>
             </div>
 
+            <div class="form-group">
+                <div class="col">
+                    <label for="exampleInputEmail1">Đặc điểm</label>
+                    <textarea name="dacdiem" class="form-control" id="" cols="20" rows="5"></textarea>
+                    <?php if(isset($error['dacdiem'])) : ?>
+                        <p class="text-danger ml-3"> <?php echo $error['dacdiem'] ?></p>
+                    <?php endif ?>
+                </div>
+            </div>
 
-
+            <div class="form-group">
+                <div class="col">
+                    <label for="exampleInputEmail1">Ý nghĩa phong thủy</label>
+                    <textarea name="ynghiaphongthuy" class="form-control" id="" cols="20" rows="5"></textarea>
+                    <?php if(isset($error['ynghiaphongthuy'])) : ?>
+                        <p class="text-danger ml-3"> <?php echo $error['ynghiaphongthuy'] ?></p>
+                    <?php endif ?>
+                </div>
+            </div>
 
             <button type="submit" class="btn btn-success mt-4 ml-3">Lưu</button>
         </form>
