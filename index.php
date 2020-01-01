@@ -13,6 +13,9 @@
         $TrangThaiSP = $db -> fetchsql($sql);
         $data[$item['tendanhmuc']] = $TrangThaiSP;
     }
+
+    $sqlcount = "SELECT danhmucsanpham.*, COUNT(sanpham.id) as countSP FROM danhmucsanpham LEFT JOIN sanpham ON danhmucsanpham.id = sanpham.danhmuc_id GROUP BY id";
+    $countSanPham = $db -> fetchsql($sqlcount);
 ?>
 
 <?php require_once __DIR__. "/layouts/header.php";  ?>
@@ -21,10 +24,10 @@
         <div class="row">
             <div class="col-3 p-0">
                 <ul class="list-group ">
-                    <?php foreach($danhmucsanpham as $item) : ?>
+                    <?php foreach($countSanPham as $item) : ?>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <a class="text-decoration-none text-success" href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>"><?php echo $item['tendanhmuc'] ?></a>
-                            <span class="badge badge-success badge-pill">14</span>
+                                <span class="badge badge-success badge-pill"><?php echo $item['countSP'] ?></span>
                         </li>     
                     <?php endforeach; ?>
                 </ul>
