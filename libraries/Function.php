@@ -17,7 +17,7 @@
     // Tạo đường dẫn cho dễ sửa trên các máy khác
     function duongdan()
     {
-        return $url = "http://localhost:8080/ShoppingTree/";
+        return $url = "http://localhost:8080/ShoppingTree-master/";
     }
 
     // Trả về địa chỉ có tham số $url
