@@ -29,7 +29,27 @@ Chào mừng đến với website giới thiệu cây cảnh.
 ## Cách chạy phần mềm
 * Trước khi vô giao diện của phần mềm cần phải vô mục public/admin/js và giải nén file ckeditor.rar
 ![giai_nen_ckeditor](https://user-images.githubusercontent.com/37401313/71795088-0ddc3c00-3077-11ea-8200-6274c9b227cc.PNG)
-* Sau đó vô đường dẫn https://localhost[cổng]/ShoppingTree-master/admin
+* Sau đó vô đường dẫn https://localhost[cổng]/ShoppingTree-master/index.php
+## Nội dung của bài toán
+* Chức năng đã làm được:
+  Thiết kế giao diện: Trang admin, trang chủ website, trang danh mục sản phẩm, trang chi tiết sản phẩm, trang giới thiêu website.
+![trang chu](https://user-images.githubusercontent.com/37401313/71811811-32044100-30a8-11ea-83fd-990236857f33.PNG)
+  Trang danh mục sản phẩm
+![dmsp](https://user-images.githubusercontent.com/37401313/71811835-40525d00-30a8-11ea-8235-bf45cfb9fc93.PNG)
+  Trang chi tiết sản phẩm
+![ctsp](https://user-images.githubusercontent.com/37401313/71811826-3d576c80-30a8-11ea-8f51-e744378a7fc8.PNG)
+  Trang giới thiệu website
+![gioi thieu](https://user-images.githubusercontent.com/37401313/71811820-3892b880-30a8-11ea-9ac0-d426c77718aa.PNG)
+  
+  Nếu muốn vô trang admin thì vô đường dẫn https://localhost[cổng]/ShoppingTree-master/admin/index.php
+  Giao diện trang chủ admin
+![admin](https://user-images.githubusercontent.com/37401313/71812014-b48d0080-30a8-11ea-810a-f25af7db86d6.PNG)
+  Giao diện trang danh mục admin có thể thêm sửa xóa danh mục trong này
+![admindmsp](https://user-images.githubusercontent.com/37401313/71812025-b8b91e00-30a8-11ea-8bae-75858630b512.PNG)
+  Giao diện trang sản phẩm 
+ ![adminsp](https://user-images.githubusercontent.com/37401313/71812028-bbb40e80-30a8-11ea-8247-003d2632e435.PNG)
+
+  
 
 
 
