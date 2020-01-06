@@ -53,8 +53,8 @@ Chào mừng đến với website giới thiệu cây cảnh.
  * Cho phép các thành viên có thể đăng nhập vào và binh luận hoặc cần sự giúp đỡ về loại cây
  * Tạo các bài viết về cách chăm sóc, cắt tỉa cây của mỗi người
  ## Tác giả
- * Cao Trung Thành - BackEnd - https://github.com/Caotrungthanh
- * Trần Quốc Toản - FrontEnd - 
+ * Cao Trung Thành - BackEnd (PHP, MySQL) - https://github.com/Caotrungthanh
+ * Trần Quốc Toản - FrontEnd (HTML, SCSS, JS)- 
 
   
 
