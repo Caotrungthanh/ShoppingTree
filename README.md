@@ -48,6 +48,10 @@ Chào mừng đến với website giới thiệu cây cảnh.
 ![admindmsp](https://user-images.githubusercontent.com/37401313/71812025-b8b91e00-30a8-11ea-8bae-75858630b512.PNG)
   Giao diện trang sản phẩm 
  ![adminsp](https://user-images.githubusercontent.com/37401313/71812028-bbb40e80-30a8-11ea-8247-003d2632e435.PNG)
+  Hướng phát triển cho bài toán
+ * Thêm trang đăng nhập và đăng ký cho các thành viên
+ * Cho phép các thành viên có thể đăng nhập vào và binh luận hoặc cần sự giúp đỡ về loại cây
+ * Tạo các bài viết về cách chăm sóc, cắt tỉa cây của mỗi người
 
   
 
