@@ -211,4 +211,21 @@ body
         }
     }
     /* End Footer */
+
+    .gioi-thieu
+    {
+        h1
+        {
+            text-transform: uppercase;
+        }
+        h2, h3
+        {
+            color: var(--mainGreen);
+        }
+        p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;          
+        }
+    }
 }
