@@ -150,5 +150,12 @@ body {
         font-size: 1.2rem; }
     body .footer .link-shop_footer {
       max-width: 100%; }
+  body .gioi-thieu h1 {
+    text-transform: uppercase; }
+  body .gioi-thieu h2, body .gioi-thieu h3 {
+    color: var(--mainGreen); }
+  body .gioi-thieu p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
